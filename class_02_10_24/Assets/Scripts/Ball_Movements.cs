@@ -22,21 +22,22 @@ public class Ball_Movements : MonoBehaviour
     void Update()
     {
 
-      //  if (xMove == true)
-      //  {
-      //      transform.position = new Vector2(transform.position.x + xspeed, transform.position.y);
-      //  }
-        //if (transform.position.x >= xBorder)
-        //{
-          //  xMove = false;
-        //}
-        if (yMove == false)
+       if (xMove == true)
+        {
+            transform.position = new Vector2(transform.position.x + xspeed, transform.position.y);
+        }
+        if (transform.position.x >= xBorder)
+        {
+            xMove = false;
+        }
+        
+      if (yMove == true)
         {
            transform.position = new Vector2(transform.position.x, transform.position.y + yspeed);
         }
-        if (transform.position.y >= yBorder)
+     if (transform.position.y >= yBorder)
         {
-            yMove = true;
+            yMove = false;
         }
        
     }
