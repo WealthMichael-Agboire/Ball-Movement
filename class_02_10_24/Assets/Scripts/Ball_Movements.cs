@@ -21,17 +21,18 @@ public class Ball_Movements : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (xMove == true)
-        {
-            transform.position = new Vector2(transform.position.x + xspeed, transform.position.y);
-        }
-        if (transform.position.x >= xBorder)
-        {
-            xMove = false;
-        }
+
+      //  if (xMove == true)
+      //  {
+      //      transform.position = new Vector2(transform.position.x + xspeed, transform.position.y);
+      //  }
+        //if (transform.position.x >= xBorder)
+        //{
+          //  xMove = false;
+        //}
         if (yMove == true)
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y + yspeed);
+           transform.position = new Vector2(transform.position.x, transform.position.y + yspeed);
         }
         if (transform.position.y >= yBorder)
         {
