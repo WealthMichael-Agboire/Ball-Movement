@@ -312,11 +312,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ae865d4ec56414f851a4a4d431408d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xspeed: 0.5
+  xspeed: 0.01
   xBorder: 7.5
-  yspeed: 0.5
+  yspeed: 0.01
   yBorder: 7.5
-  yMove: 0
+  yMove: 1
   xMove: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
