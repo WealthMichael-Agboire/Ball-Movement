@@ -6,10 +6,10 @@ public class Ball_Movements : MonoBehaviour
 {
     //varibles for game
     public float xspeed = 0.01f; //variable for the movement on the x axis
-    public float xBorder = 7.5f;
+    public float xBorder = 2.5f;
     public float yspeed = 0.01f;
     public float yBorder = 2.5f;
-    public bool yMove = true;
+    public bool yMove = false;
     public bool xMove = true;
 
     // Start is called before the first frame update
@@ -30,13 +30,13 @@ public class Ball_Movements : MonoBehaviour
         //{
           //  xMove = false;
         //}
-        if (yMove == true)
+        if (yMove == false)
         {
            transform.position = new Vector2(transform.position.x, transform.position.y + yspeed);
         }
         if (transform.position.y >= yBorder)
         {
-            yMove = false;
+            yMove = true;
         }
        
     }
