@@ -42,7 +42,7 @@ public class Ball_Movements : MonoBehaviour
 
           if (transform.position.y == yBorder) 
         {
-            return;
+            (transform.position.y - yspeed);
         }
 
 
