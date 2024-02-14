@@ -10,7 +10,7 @@ public class Ball_Movements : MonoBehaviour
     public float yspeed = 0.01f;
     public float yBorder = 2.5f;
     public float Yspeed = -0.01f;
-    public bool yMove = false;
+   public bool yMove = true;
     public bool xMove = true;
 
     // Start is called before the first frame update
@@ -36,8 +36,6 @@ public class Ball_Movements : MonoBehaviour
             yMove = false;
         }
      
-
-
        
     }
 }
