@@ -54,5 +54,19 @@ public float xspeed = 0.01f; //variable for the movement on the x axis
             yMove=true;
         }
 
+}
+void OnCollisionEnter2D(Collision2D collision) {
+    if (collision.collider.CompareTag ("RPlayer")) 
+    { 
+        Debug.Log("hit");
+    }
+    if (xMove == true)
+    {
+        xMove = false;
+    }
+    else if (xMove == false)
+    {
+        xMove = true;
+    }
     }
 }
