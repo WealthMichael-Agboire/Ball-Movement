@@ -32,27 +32,27 @@ public class Ball_Movements : MonoBehaviour
         }
 
 
-      if (yMove == true)
+      if (xMove == false)
+        {
+           transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
+        }
+     if (transform.position.x >= xBorder)
+        {
+            xMove = false;
+        }
+
+
+          if (yMove == true)
         {
            transform.position = new Vector2(transform.position.x, transform.position.y + yspeed);
-        }
-     if (transform.position.y >= yBorder)
-        {
-            yMove = false;
-        }
-
-
-          if (yMove == false)
-        {
-           transform.position = new Vector2(transform.position.x, transform.position.y - yspeed);
         }
      if (transform.position.y >= yBorder)
      {
         yMove = false;
      }
-if (xMove == false)
+if (yMove == false)
 {
-    transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
+    transform.position = new Vector2(transform.position.x, transform.position.y - yspeed);
 }
      
        
