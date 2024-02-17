@@ -50,8 +50,8 @@ public class Ball_Movements : MonoBehaviour
            transform.position = new Vector2(transform.position.x, transform.position.y - yspeed);
         }
      if (transform.position.y <= -2.5) 
-     {
-        yMove = false;
+{
+        yMove = true;
      }
  
 if (transform.position.x == xBorder)
