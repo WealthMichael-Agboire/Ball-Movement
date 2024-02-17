@@ -52,13 +52,9 @@ public class Ball_Movements : MonoBehaviour
      if (transform.position.y <= -2.5) 
 {
         yMove = true;
-     }
+     }       
  
-if (transform.position.y == yBorder)
-{
-    transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
-}
-   
-       
+ transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
+
     }
 }
