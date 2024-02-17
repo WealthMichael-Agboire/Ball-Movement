@@ -315,7 +315,7 @@ MonoBehaviour:
   xspeed: 0.01
   xBorder: 7.5
   yspeed: 0.01
-  yBorder: 7.5
+  yBorder: 2.5
   yMove: 1
   xMove: 1
 --- !u!1660057539 &9223372036854775807
