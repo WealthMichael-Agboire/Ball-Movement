@@ -32,11 +32,6 @@ public class Ball_Movements : MonoBehaviour
             xMove = false;
         }
 
-if (xMove == true)
-{
-              transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
-}
-
       if (yMove == true)
         {
            transform.position = new Vector2(transform.position.x, transform.position.y + yspeed);
@@ -45,8 +40,6 @@ if (xMove == true)
         {
             yMove = false;
         }
-
-
 
 
           if (yMove == false)
