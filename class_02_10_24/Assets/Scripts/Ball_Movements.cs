@@ -33,8 +33,6 @@ public class Ball_Movements : MonoBehaviour
         }
 
 
-
-
       if (yMove == true)
         {
            transform.position = new Vector2(transform.position.x, transform.position.y + yspeed);
@@ -51,17 +49,15 @@ public class Ball_Movements : MonoBehaviour
         {
            transform.position = new Vector2(transform.position.x, transform.position.y - yspeed);
         }
-     if (transform.position.y >= yBorder)
+     if (transform.position.y <= -2.5) 
      {
         yMove = false;
      }
-if (xMove == false)
+ 
+if (transform.position.x == xBorder)
 {
     transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
 }
-
- 
-
    
        
     }
