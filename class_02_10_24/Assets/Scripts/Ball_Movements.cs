@@ -9,8 +9,6 @@ public class Ball_Movements : MonoBehaviour
     public float xBorder = 7.5f;
     public float yspeed = 0.01f;
     public float yBorder = 2.5f;
-  public float xBorder2 = -7.5f;
-  public float yBorder2 = -2.5f;
    public bool yMove = true;
     public bool xMove = true;
 
@@ -25,7 +23,7 @@ public class Ball_Movements : MonoBehaviour
     {
 
      
- if (xMove == true)
+  if (xMove == true)
         {
             transform.position = new Vector2(transform.position.x + xspeed, transform.position.y);
         }
@@ -37,38 +35,32 @@ public class Ball_Movements : MonoBehaviour
 
 
 
-    if (xMove == false)
-        {
-           transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
-        }
-    if (transform.position.x >= xBorder2)
-        {
-            xMove = true;
-        }
-
-
-
-
-        if (yMove == true)
+      if (yMove == true)
         {
            transform.position = new Vector2(transform.position.x, transform.position.y + yspeed);
         }
-          if (transform.position.y >= yBorder)
+     if (transform.position.y >= yBorder)
         {
-        yMove = false;
+            yMove = false;
         }
 
 
 
 
-if (yMove == false)
+          if (yMove == false)
+        {
+           transform.position = new Vector2(transform.position.x, transform.position.y - yspeed);
+        }
+     if (transform.position.y >= yBorder)
+     {
+        yMove = false;
+     }
+if (xMove == false)
 {
-    transform.position = new Vector2(transform.position.x, transform.position.y - yspeed);
+    transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
 }
- if (transform.position.y >= yBorder2)    
- {
-    yMove = true;
- }
+
+ 
 
    
        
