@@ -54,7 +54,7 @@ public class Ball_Movements : MonoBehaviour
         yMove = true;
      }
  
-if (transform.position.x == xBorder)
+if (transform.position.y == yBorder)
 {
     transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
 }
