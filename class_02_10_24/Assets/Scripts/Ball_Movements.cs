@@ -8,7 +8,7 @@ public class Ball_Movements : MonoBehaviour
     public float xspeed = 0.01f; //variable for the movement on the x axis
     public float xBorder = 7.5f;
     public float yspeed = 0.01f;
-    public float yBorder = 2.5f;
+    public float yBorder = 4.5f;
     public float Yspeed = -0.01f;
    public bool yMove = true;
     public bool xMove = true;
@@ -43,7 +43,7 @@ public class Ball_Movements : MonoBehaviour
         }
 
 
-          if (yMove == true)
+          if (yMove == false)
         {
            transform.position = new Vector2(transform.position.x, transform.position.y - yspeed);
         }
@@ -51,7 +51,10 @@ public class Ball_Movements : MonoBehaviour
      {
         yMove = false;
      }
-
+if (xMove == false)
+{
+    transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
+}
      
        
     }
