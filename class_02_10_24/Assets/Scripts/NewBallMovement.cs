@@ -59,7 +59,7 @@ void OnCollisionEnter2D(Collision2D collision) {
     if (collision.collider.CompareTag ("RPlayer")) 
     { 
         Debug.Log("hit");
-    }
+    
     if (xMove == true)
     {
         xMove = false;
@@ -69,4 +69,5 @@ void OnCollisionEnter2D(Collision2D collision) {
         xMove = true;
     }
     }
+}
 }
