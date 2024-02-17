@@ -32,9 +32,9 @@ public class Ball_Movements : MonoBehaviour
         {
             transform.position = new Vector2(transform.position.x - xspeed, transform.position.y);
         }
-        if (transform.position.x >= xBorder2) 
+        if (transform.position.x <= xBorder2) 
         {
-            xMove = false
+            xMove = false;
         }
 
 
@@ -46,9 +46,9 @@ public class Ball_Movements : MonoBehaviour
         {
             transform.position = new Vector2(transform.position.x, transform.position.y - yspeed);
         }
-        if (transform.position.y >= yBorder2)
+        if (transform.position.y <= yBorder2)
         {
-           yMove = false
+           yMove = false;
         }
 
    
