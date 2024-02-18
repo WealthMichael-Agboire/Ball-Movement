@@ -34,6 +34,22 @@ Debug.Log("O");
 velocity.y = 0; //dont move
     }
 rb2d.velocity = velocity;
+    
+    
+    if (Input.GetKey(KeyCode.W) && transform.position.y <= yBorder)
+    {
+        velocity.y = speed;
+        Debug.Log("W");
+    }
+     else if (Input.GetKey(KeyCode.A) && transform.position.y >= -yBorder)
+    {
+        velocity.y = -speed; //move the speed down
+        Debug.Log("A");
+    }
+    else { //otherwise
+velocity.y = 0; //dont move
+    }
+    
     }
 
 }
