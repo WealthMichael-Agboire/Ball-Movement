@@ -7,9 +7,9 @@ public class NewBallMovement : MonoBehaviour
 
 
 public float xspeed = 0.01f; //variable for the movement on the x axis
-    public float xBorder = 7.5f;
+    public float xBorder = 10.9f;
     public float yspeed = 0.01f;
-    public float yBorder = 2.5f;
+    public float yBorder = 4.5f;
    public bool yMove = true;
     public bool xMove = true;
 

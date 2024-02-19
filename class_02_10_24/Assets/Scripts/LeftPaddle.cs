@@ -7,7 +7,7 @@ public class LeftPaddle : MonoBehaviour
 {
     public float speed = 10f;
    private Rigidbody2D rb2d;
-   public float yBorder = 2.5f;
+   public float yBorder = 3.5f;
     // Start is called before the first frame update
     void Start()
     {
