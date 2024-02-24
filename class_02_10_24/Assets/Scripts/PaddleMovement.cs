@@ -20,15 +20,15 @@ public class PaddleMovement : MonoBehaviour
         var velocity = rb2d.velocity; //creates and declare variables for velocity
     
     //control the paddle
-    if (Input.GetKey(KeyCode.O)  && transform.position.y <= yBorder)
+    if (Input.GetKey(KeyCode.UpArrow)  && transform.position.y <= yBorder)
     { 
 velocity.y = speed; //move the speed 
-Debug.Log("O");
+Debug.Log("UpArrow");
     }
-    else if (Input.GetKey(KeyCode.L) && transform.position.y >= -yBorder)
+    else if (Input.GetKey(KeyCode.DownArrow) && transform.position.y >= -yBorder)
     {
         velocity.y = -speed; //move the speed down
-        Debug.Log("L");
+        Debug.Log("DownArrow");
     }
     else { //otherwise
 velocity.y = 0; //dont move

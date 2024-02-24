@@ -25,10 +25,10 @@ public class LeftPaddle : MonoBehaviour
 velocity.y = speed; //move the speed 
 Debug.Log("W");
     }
-    else if (Input.GetKey(KeyCode.A) && transform.position.y >= -yBorder)
+    else if (Input.GetKey(KeyCode.S) && transform.position.y >= -yBorder)
     {
         velocity.y = -speed; //move the speed down
-        Debug.Log("A");
+        Debug.Log("S");
     }
     else { //otherwise
 velocity.y = 0; //dont move
